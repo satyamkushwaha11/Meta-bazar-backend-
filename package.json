@@ -2,21 +2,28 @@
   "name": "meta-bazar-be",
   "version": "1.0.0",
   "description": "Meta-bazar backend ",
-  "main": "index.js",
+  "main": "index.ts",
   "author": "satyam kushwaha",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "dependencies": {
+    "@apollo/server": "^4.10.2",
     "bcrypt": "^5.1.1",
-    "express": "^4.18.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "graphql": "^16.8.1",
     "jsonwebtoken": "^9.0.2",
-    "mongoos": "^0.0.1-security"
+    "mongoose": "^8.2.4",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0",
-    "typescript": "^5.4.2"
+    "nodemon": "^3.1.0"
   }
 }
